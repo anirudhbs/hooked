@@ -5,7 +5,7 @@ controller.home = (req, res) => {
 }
 
 controller.hook = (req, res) => {
-  console.log(`body is ${req.body}`)
+  console.log(`body is ${JSON.stringify(req.body)}`)
 
   res.status(200).send("success")
 }
